@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import menuData from './menuData'
 import './App.css';
+// import { act } from 'react-dom/test-utils';
 
-function App() {
+export default function App() {
+
+  const [foodMenu, setFoodMenu] = useState([])
+  const [activePage, setActivePage] = useState('Home')
+
+  useEffect(() => {
+    setFoodMenu(menuData)
+  }, [])
+
+  const changeActivePage = (pageName) => {
+    setActivePage(pageName)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+        onclick={changeActivePage}
+      // navLinks={['Home', 'Menu', 'Our Story', 'Events', 'Contact']}
+      />
+      <Main data={foodMenu} activePage={activePage} />
+      <Footer />
     </div>
   );
 }
-
-export default App;
