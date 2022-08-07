@@ -6,7 +6,7 @@ export default function Home(props) {
 
 
     return (
-        <div className="home-page">
+        <div className="home-section">
             <div className="image-container">
 
 

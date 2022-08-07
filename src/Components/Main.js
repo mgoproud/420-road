@@ -1,4 +1,4 @@
-import { default as UUID } from "node-uuid"
+// import { default as UUID } from "node-uuid"
 import React, { useState, useEffect } from "react";
 import Home from "./Child/Home";
 import Menu from "./Child/Menu";

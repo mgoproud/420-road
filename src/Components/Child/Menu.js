@@ -1,17 +1,16 @@
 import React from "react";
-import { default as UUID } from "node-uuid"
+// import { default as UUID } from "node-uuid"
 
 
 export default function Menu(props) {
 
-    const randomId = UUID.v4()
+    // const randomId = UUID.v4()
     const data = props.data?.map((d, index) => {
-
         return (
             <li className="category" key={index}>
                 <h3 className="menu-title">{d.title}</h3>
-                {d.items?.map(i => {
-                    return <div className="menu-card">
+                {d.items?.map((i, index) => {
+                    return <div className="menu-card" key={index}>
                         <div className="name-container">
                             <h4 className="item-name">{i.name}</h4>
                             <p className="item-price">{i.price}</p>
@@ -20,13 +19,13 @@ export default function Menu(props) {
                         <hr />
                     </div>
                 })}
-            </li >
+            </li>
         )
     })
 
     return (
         <div className="section-menu">
-            <h2 className="food-title">420 ROAD <span className="food-title-seperator">|</span>FOOD MENU</h2>
+            <h1 className="food-title">420 ROAD <span className="food-title-seperator">|</span>FOOD MENU</h1>
             <ul className="menu-content">
                 {data}
             </ul>

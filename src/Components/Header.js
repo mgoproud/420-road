@@ -25,7 +25,7 @@ export default function Header({ navLinks, onclick }) {
 
 
             <Navbar
-                navLinks={['Home', 'Menu', 'Our Story', 'Events', 'Contact']}
+                navLinks={['Home', 'Our Story', 'Menu', 'Events', 'Contact']}
                 onclick={onclick}
             />
         </header>

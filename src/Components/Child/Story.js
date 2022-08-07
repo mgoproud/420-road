@@ -1,6 +1,6 @@
 import React from "react";
-import foundersImg from '../../img/main/events/420-done.jpeg'
-import img2 from '../../img/main/events/img-6.jpg'
+// import foundersImg from '../../img/main/events/420-done.jpeg'
+// import img2 from '../../img/main/events/img-6.jpg'
 
 export default function Story(props) {
 
@@ -15,7 +15,7 @@ export default function Story(props) {
     return (
         <div className="story-section">
 
-            <h2 className="food-title">Get to know us and see our vision</h2>
+            <h1 className="food-title">Know About Us</h1>
             <div className="story-box">           
                 <figure className="img-fig-1">
                     <div className="story-layer">  
