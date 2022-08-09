@@ -2,10 +2,10 @@ import React from "react";
 // import { default as UUID } from "node-uuid"
 
 
-export default function Menu(props) {
+export default function Menu({menu}) {
 
     // const randomId = UUID.v4()
-    const data = props.data?.map((d, index) => {
+    const data = menu?.map((d, index) => {
         return (
             <li className="category" key={index}>
                 <h3 className="menu-title">{d.title}</h3>

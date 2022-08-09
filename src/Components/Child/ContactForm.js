@@ -1,8 +1,8 @@
 import {useState, useRef} from 'react'
 import emailjs from '@emailjs/browser'
-// import axios from 'axios'
-// import { toast, ToastContainer } from 'react-toastify'
+import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+// toast.configure()
 
 const ContactForm = () => {
 
@@ -25,8 +25,13 @@ const sendEmail = (e) => {
     .then((res) => {
         console.log(res.text)
         console.log('message sent')
-        
+        // res.success('Your Inquiry Is Sent, We\'ll Get In Touch Shortly')
+        toast.error('Your Inquiry Is Sent, We\'ll Get In Touch Shortly')
+        // toast('Your Inquiry Is Sent, We\'ll Get In Touch Shortly',
+        //    {position: toast.POSITION.BOTTOM_RIGHT})
     }, (err) => {
+        toast('Error In Sending Inquiry, Please Try Again Later...',
+           {position: toast.POSITION.BOTTOM_RIGHT})
         console.log(err.text)
     })
     resetForm()
