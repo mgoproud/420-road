@@ -14,7 +14,7 @@ const [location, setLocation] = useState('')
 const [occupation, setOccupation] = useState('')
 const [hearAboutUs, setHearAboutUs] = useState('')
 const [message, setMessage] = useState('')
-const [loading, setLoading] = useState(false)
+// const [loading, setLoading] = useState(false)
 
 const form = useRef()
 
