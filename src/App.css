@@ -128,9 +128,7 @@ h2 {
 }
 
 .section-footer {
-  /* min-height: 6%; */
   min-height: 40px;
-  /* height: 6%; */
   height: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -148,6 +146,20 @@ h2 {
   margin: auto 0;
   text-align: center;
   vertical-align: middle;
+}
+
+.dev-name {
+  font-size: 1.05em;
+  color: rgba(245, 255, 222, 0.88);
+  margin-left: 2px;
+  letter-spacing: 0.75px;
+}
+
+.footer-1code {
+  color: #ff2d2deb;
+  font-size: 1.02em;
+  font-weight: 600;
+  padding: 0 1px;
 }
 
 .social-box {
@@ -433,37 +445,6 @@ figcaption {
 
 hr {
   display: none;
-}
-
-.footer-logo img {
-  /* height: 70%; */
-  width: 50px;
-  margin-top: 4.5px;
-  margin-left: -220px;
-  border-radius: 50%;
-}
-
-.dev-name {
-  font-size: 1.05em;
-  font-size: 1.05em;
-  color: #fbfff9eb;
-  color: rgba(245, 255, 222, 0.87);
-  margin-left: 2px;
-}
-
-.footer-1code {
-  color: #ff2d2deb;
-  font-size: 1.05em;
-  font-weight: 600;
-  padding: 0 1px;
-  /* font-size: 105%; */
-}
-
-.footer-logo {
-  height: 90%;
-  width: 2.25rem;
-  margin: auto 0;
-  border-radius: 50%;
 }
 
 .hr-styled {
