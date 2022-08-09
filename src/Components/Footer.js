@@ -3,7 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faAt } from "@fortawesome/free-solid-svg-icons";
 import { fab } from '@fortawesome/free-brands-svg-icons'
-// import footerLogo from '../img/footer/one1code-logo.png'
+
 
 library.add(fab)
 
@@ -18,8 +18,8 @@ export default function Footer() {
             <div className="social-box">
                 <FontAwesomeIcon className="social-icon" icon={faPhone} />
                 <FontAwesomeIcon className="social-icon" icon={faAt} />
-                <FontAwesomeIcon className="social-icon" icon={["fab", "fa-instagram"]} />               
-                {/* <FontAwesomeIcon className="social-icon" icon={["fab", "fa-github"]} /> */}
+                {/* <FontAwesomeIcon className="social-icon" icon={["fab", "fa-instagram"]} />                */}
+                <FontAwesomeIcon className="social-icon" icon={["fab", "fa-github"]} />
             </div>
         </div>
     )

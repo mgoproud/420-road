@@ -10,24 +10,12 @@ import './App.css';
 export default function App() {
 
   // const [foodMenu, setFoodMenu] = useState([])
-  const [activePage, setActivePage] = useState(window.localStorage.getItem('active-page') || 'Home')
+  const [activePage, setActivePage] = useState(window.sessionStorage.getItem('active-page') || 'Home')
 
-  // window.localStorage.getItem('active-page')) || 
 
-  console.log(activePage)
-  console.log(window.localStorage.getItem('active-page'))
-  // console.log(window.localStorage.getItem('active-page'))
-
-  // useEffect(() => {
-  //   const savedActivePage = window.localStorage.getItem('active-page')
-  //   setActivePage(savedActivePage ? savedActivePage : 'Home')
-  //   // setActivePage(JSON.parse(window.sessionStorage.getItem("active-page")) || 'Home');
-  // }, [])
-  
-
-useEffect(() => {
-  window.localStorage.setItem('active-page', activePage)
-}, [activePage])
+  useEffect(() => {
+    window.sessionStorage.setItem('active-page', activePage)
+  }, [activePage])
 
 
   const changeActivePage = (pageName) => {

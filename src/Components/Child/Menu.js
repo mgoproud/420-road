@@ -1,10 +1,7 @@
 import React from "react";
-// import { default as UUID } from "node-uuid"
-
 
 export default function Menu({menu}) {
 
-    // const randomId = UUID.v4()
     const data = menu?.map((d, index) => {
         return (
             <li className="category" key={index}>
@@ -24,13 +21,13 @@ export default function Menu({menu}) {
     })
 
     return (
+
         <div className="section-menu">
             <h1 className="food-title">420 ROAD <span className="food-title-seperator">|</span>FOOD MENU</h1>
             <ul className="menu-content">
                 {data}
             </ul>
-
         </div>
-    )
 
+    )
 }

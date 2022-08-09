@@ -4,10 +4,11 @@ import React from 'react'
 const ContactInfo = ({FontAwesomeIcon, faEnvelope, faPhone, faLocation}) => {
 
 
-
   return (
+
     <div className='contact-info'>
     {/* <h3 className='contact-h3'>Contact Info</h3> */}
+    <h3 className='contact-title'>Contact Info</h3>
         <div className='contact-group groupped'>
             <FontAwesomeIcon className='contact-icon' icon={faPhone} />
             <p className='contact-text'>+971 50 747 2459</p>

@@ -3,6 +3,7 @@ import { faEnvelope, faPhone, faLocationDot } from "@fortawesome/free-solid-svg-
 import ContactInfo from './ContactInfo'
 import ContactForm from './ContactForm'
 
+
 const Contact = () => {
 
     return (

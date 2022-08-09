@@ -1,8 +1,8 @@
 import {useState, useRef} from 'react'
 import emailjs from '@emailjs/browser'
-import {toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
-// toast.configure()
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
 
@@ -24,15 +24,19 @@ const sendEmail = (e) => {
     emailjs.sendForm('service_lujgo5h', 'template_8oyu3lg', form.current, 'LRuO7mVxJiSFCqzB1')
     .then((res) => {
         console.log(res.text)
-        console.log('message sent')
-        // res.success('Your Inquiry Is Sent, We\'ll Get In Touch Shortly')
-        toast.error('Your Inquiry Is Sent, We\'ll Get In Touch Shortly')
-        // toast('Your Inquiry Is Sent, We\'ll Get In Touch Shortly',
-        //    {position: toast.POSITION.BOTTOM_RIGHT})
-    }, (err) => {
-        toast('Error In Sending Inquiry, Please Try Again Later...',
+        toast.success('Thank You For Contacting Us, We\'ll Get In Touch With You Shortly',
            {position: toast.POSITION.BOTTOM_RIGHT})
-        console.log(err.text)
+    }
+    // , (err) => {
+    //     // toast('Error In Sending Inquiry, Please Try Again Later...',
+    //     //    {position: toast.POSITION.BOTTOM_RIGHT})
+    //     console.log(err.text)
+    //     console.log('message NOT sent')
+    // }
+    )
+    .catch((err) => {
+        toast.error('Something Went Wrong, Please Try Again Later... Thank You')
+        console.log(err)
     })
     resetForm()
 }
@@ -167,9 +171,11 @@ const resetForm = () => {
                             type='submit'
                             >
                             Send Message
+                            
                     </button> 
                 </div>
 
+<ToastContainer />
                 
             </form>
 
