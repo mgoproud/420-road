@@ -19,10 +19,14 @@ const ContactInfo = ({FontAwesomeIcon, faEnvelope, faPhone, faLocation}) => {
            <FontAwesomeIcon className='contact-icon' icon={faEnvelope} /> 
            <p className='contact-text'>one1code.dev@gmail.com</p>
         </div>
-        <div className='contact-group groupped'>
+        {/* <div className='contact-group groupped'>
             <FontAwesomeIcon className='contact-icon' icon={faLocation} />
             <p className='contact-text'>Chester St. Glendale </p>
             <p className='contact-text'>California, USA</p>
+        </div> */}
+        <div className='contact-group groupped'>
+        <FontAwesomeIcon className="contact-icon" icon={["fab", "fa-instagram"]} />
+        <p className='contact-text'>420road.lb</p>
         </div>
     </div>
   )

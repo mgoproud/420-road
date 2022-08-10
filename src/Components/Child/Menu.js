@@ -23,7 +23,7 @@ export default function Menu({menu}) {
     return (
 
         <div className="section-menu">
-            <h1 className="food-title">420 ROAD <span className="food-title-seperator">|</span>FOOD MENU</h1>
+            <h1 className="food-title heading-color">420 ROAD <span className="food-title-seperator">|</span>FOOD MENU</h1>
             <ul className="menu-content">
                 {data}
             </ul>

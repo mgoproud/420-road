@@ -10,15 +10,11 @@ const Events = () => {
         color: '#FF2D2D'
     }
 
-    const h1Styles = {
-        fontSize: '2.5rem',
-        marginTop: '3rem'
-    }
 
     return (
 
         <div className="section-events">
-            <h1 style={h1Styles} className="food-title">EVENTS PAGE</h1>
+            <h1 className="food-title heading-color">EVENTS PAGE</h1>
             <p style={titleStyles}>COMMING SOON</p>
         </div>
         

@@ -158,7 +158,7 @@ const resetForm = () => {
                 <div className='form-wrapper'>
                     <textarea 
                         rows='10'
-                        cols='38'
+                        cols='32'
                         id='message' 
                         name='message'
                         value={message}
@@ -175,8 +175,11 @@ const resetForm = () => {
                     </button> 
                 </div>
 
-<ToastContainer />
-                
+<ToastContainer
+    // style={{ width: "380px", color: 'rgba(250, 253, 240, 0.94)'}}
+
+ />
+
             </form>
 
     

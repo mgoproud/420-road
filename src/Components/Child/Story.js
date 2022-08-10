@@ -12,7 +12,7 @@ export default function Story({ ourStory }) {
     return (
 
         <div className="story-section">
-            <h1 className="food-title">Know About Us</h1>
+            <h1 className="food-title heading-color">Know About Us</h1>
             <div className="story-box">           
                 <figure className="img-fig-1">
                     <div className="story-layer">  
